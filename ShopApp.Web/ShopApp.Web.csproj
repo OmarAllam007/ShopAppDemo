@@ -8,6 +8,7 @@
 
   <ItemGroup>
     <Content Remove="Views\Category\Edit.cshtml" />
+    <Content Remove="Views\Shared\_Dashboard.cshtml" />
   </ItemGroup>
 
   <ItemGroup>
@@ -18,6 +19,7 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="8.0.2" />
   </ItemGroup>
 
   <ItemGroup>
@@ -26,10 +28,36 @@
 
   <ItemGroup>
     <_ContentIncludedByDefault Remove="Views\Category\Edit.cshtml" />
+    <_ContentIncludedByDefault Remove="Views\Shared\_Dashboard.cshtml" />
   </ItemGroup>
 
   <ItemGroup>
     <None Include="Views\Category\Edit.cshtml" />
+    <None Include="Views\Shared\_Dashboard.cshtml" />
+    <None Include="wwwroot\plugins\bootstrap\js\bootstrap.bundle.js" />
+    <None Include="wwwroot\plugins\bootstrap\js\bootstrap.bundle.js.map" />
+    <None Include="wwwroot\plugins\bootstrap\js\bootstrap.bundle.min.js" />
+    <None Include="wwwroot\plugins\bootstrap\js\bootstrap.bundle.min.js.map" />
+    <None Include="wwwroot\plugins\bootstrap\js\bootstrap.js" />
+    <None Include="wwwroot\plugins\bootstrap\js\bootstrap.js.map" />
+    <None Include="wwwroot\plugins\bootstrap\js\bootstrap.min.js" />
+    <None Include="wwwroot\plugins\bootstrap\js\bootstrap.min.js.map" />
+    <None Include="wwwroot\plugins\fontawesome-free\webfonts\fa-brands-400.svg" />
+    <None Include="wwwroot\plugins\fontawesome-free\webfonts\fa-brands-400.woff2" />
+    <None Include="wwwroot\plugins\fontawesome-free\webfonts\fa-regular-400.svg" />
+    <None Include="wwwroot\plugins\fontawesome-free\webfonts\fa-regular-400.woff2" />
+    <None Include="wwwroot\plugins\fontawesome-free\webfonts\fa-solid-900.svg" />
+    <None Include="wwwroot\plugins\fontawesome-free\webfonts\fa-solid-900.woff2" />
+    <None Include="wwwroot\plugins\jquery\jquery.js" />
+    <None Include="wwwroot\plugins\jquery\jquery.min.js" />
+    <None Include="wwwroot\plugins\jquery\jquery.min.map" />
+    <None Include="wwwroot\plugins\jquery\jquery.slim.js" />
+    <None Include="wwwroot\plugins\jquery\jquery.slim.min.js" />
+    <None Include="wwwroot\plugins\jquery\jquery.slim.min.map" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <UpToDateCheckInput Remove="Views\Shared\_Dashboard.cshtml" />
   </ItemGroup>
 
 </Project>

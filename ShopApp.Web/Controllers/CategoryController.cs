@@ -16,7 +16,6 @@ namespace ShopApp.Web.Controllers
         public IActionResult Index()
         {
             var categories = _context.Categories.ToList();
-
             return View(categories);
         }
 
@@ -37,7 +36,7 @@ namespace ShopApp.Web.Controllers
             }
             _context.Categories.Add(category);
             _context.SaveChanges();
-
+            TempData["Create"] = "Category created successfully";
             return RedirectToAction("Index");
         }
 
@@ -70,6 +69,8 @@ namespace ShopApp.Web.Controllers
             }
             _context.Categories.Update(category);
             _context.SaveChanges();
+
+            TempData["Update"] = "Category updated successfully";
 
             return RedirectToAction("Index");
         }
@@ -107,6 +108,8 @@ namespace ShopApp.Web.Controllers
 
             _context.Categories.Remove(categoryInDb);
             _context.SaveChanges();
+
+            TempData["Delete"] = "Category deleted successfully";
 
             return RedirectToAction("Index");
         }

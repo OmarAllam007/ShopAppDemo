@@ -1,8 +1,15 @@
 ﻿@model IEnumerable<Category> 
 
-<h3>Categories</h3>
+@{
+    ViewBag.PageTitle = "Category Management";
+    ViewBag.CardTitle = "Categories";
+    Layout = "~/Views/Shared/_Dashboard.cshtml";
+}
 
-<a href="/Category/Create" class="btn btn-outline-success mb-2 mt-2">New Category</a>
+<div>
+    <a href="/Category/Create" class="btn btn-outline-success mb-2 mt-2">New Category</a>
+
+</div>
 <table class="table table-striped">
     <tr>
         <th>Name</th>
